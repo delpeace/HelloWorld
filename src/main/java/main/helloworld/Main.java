@@ -13,7 +13,7 @@ public class Main {
      */
     public static void main(String[] args) {
         
-        System.out.println("Hello World!");
+    /*    System.out.println("Hello World!");
         System.out.println("Milica Zivanovic");
         
         int age = 5;
@@ -62,4 +62,41 @@ public class Main {
         
     }
     
-}
+};
+
+*/
+
+        System.out.println("Unesite redni broj dana u nedelji (1-7): ");
+        Scanner input = new Scanner(System.in);
+        int day = input.nextInt();
+        String dayString;
+        
+ switch (day) { 
+        case 1: 
+            dayString = "Ponedeljak"; 
+            break; 
+        case 2: 
+            dayString = "Utorak"; 
+            break; 
+        case 3: 
+            dayString = "Sreda"; 
+            break; 
+        case 4: 
+            dayString = "Četvrtak"; 
+            break; 
+        case 5: 
+            dayString = "Petak"; 
+            break; 
+        case 6: 
+            dayString = "Subota"; 
+            break; 
+        case 7: 
+            dayString = "Nedelja"; 
+            break; 
+        default: 
+            dayString = "Nepostojeći dan"; 
+            break; 
+        } 
+        System.out.println(dayString); 
+    } 
+} 
